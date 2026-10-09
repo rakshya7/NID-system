@@ -1,0 +1,118 @@
+:root{--blue:#003893;--red:#b3122d;--bd:#cfd6e0;--bg:#f4f6f9;--ink:#1d2433}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 "Noto Sans Devanagari",Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}.wrap{max-width:1000px;margin:auto;padding:0 16px}h1,h2,h3{line-height:1.25}
+.topbar{background:var(--blue);color:#fff;font-size:13px;padding:5px 0}.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}.topbar a{color:#fff;margin-left:10px}
+header{background:#fff;border-bottom:4px solid var(--red)}.brand{display:flex;gap:14px;align-items:center;padding-top:12px;padding-bottom:12px}
+.emb{width:68px;height:68px;flex:none;object-fit:contain}.emb.ph{border:2px dashed var(--bd);border-radius:50%;font-size:9px;text-align:center;color:#667;display:flex;align-items:center;justify-content:center}
+.g1{font-size:14px;color:var(--red);font-weight:700}.g2{font-size:18px;font-weight:700;color:var(--blue)}.g3{font-size:15px}.badge{background:#fff4d6;border:1px solid #e0a800;font-size:11px;font-weight:700;padding:1px 7px;border-radius:3px;margin-left:6px;white-space:nowrap}
+nav{display:flex;flex-wrap:wrap;border-top:1px solid var(--bd)}nav a{padding:10px 13px;text-decoration:none;font-weight:600;font-size:15px;color:var(--ink);border-bottom:3px solid transparent}nav a:hover{border-color:var(--red);color:var(--blue)}
+a:focus,button:focus,input:focus,select:focus,summary:focus{outline:3px solid #f5a623;outline-offset:2px}
+.proto{background:#fff4d6;border-bottom:2px solid #e0a800;font-size:14px;padding:8px 0}
+.hero{background:var(--blue);color:#fff;padding:34px 0}.hero p{max-width:560px}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}.sc{display:block;background:#fff;border:1px solid var(--bd);border-left:5px solid var(--blue);padding:14px;text-decoration:none;color:var(--ink);border-radius:3px}.sc:hover{border-left-color:var(--red)}.sc b{display:block;color:var(--blue)}.sc span{font-size:14px;color:#4a5568}
+.btn{display:inline-block;background:var(--blue);color:#fff;border:0;padding:10px 18px;border-radius:3px;font:inherit;font-weight:600;text-decoration:none;cursor:pointer}.btn.red{background:var(--red)}.btn.alt{background:#fff;color:var(--blue);border:1px solid var(--blue)}.btn.sm{padding:3px 12px;font-size:14px;margin-left:8px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:4px;padding:22px;margin:16px 0}.lead{margin-top:0;color:#3b4557}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.fld{margin-bottom:12px}[hidden]{display:none!important}label,legend{display:block;font-weight:600;margin-bottom:3px}fieldset{border:0;padding:0;margin:0}.rad{display:inline-block;font-weight:400;margin-right:16px}
+input,select{width:100%;padding:9px;border:1px solid #8794a6;border-radius:3px;font:inherit;background:#fff}input[type=radio],input[type=checkbox]{width:auto}
+.rq{color:var(--red)}.opt{font-weight:400;font-size:13px;color:#667}.hint{font-size:13px;color:#4a5568;margin:3px 0 0}.err{color:#a40000;font-weight:600;font-size:14px;margin:3px 0 0}.demo{background:#eef3ff;padding:8px;border-left:4px solid var(--blue)}.ok-msg{color:#1b7a3a;font-weight:600}
+.stepper{margin-top:16px}.sn{margin:0 0 4px}.bar{height:8px;background:#dde3ec;border-radius:4px}.bar i{display:block;height:100%;background:var(--red);border-radius:4px}
+.stepper ol{display:flex;gap:2px;list-style:none;padding:0;margin:8px 0 0}.stepper li{flex:1;font-size:11px;padding:4px 2px;border-top:3px solid var(--bd);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.stepper .ok{border-color:#1b7a3a}.stepper .on{border-color:var(--blue);font-weight:700}@media(max-width:700px){.stepper ol{display:none}}
+.bring{border:2px solid var(--red);background:#fff;padding:14px;border-radius:4px;margin:16px 0}.warn{background:#fdecea;padding:8px 10px;border-left:4px solid var(--red)}.tag{background:#e6ecf8;padding:1px 8px;border-radius:10px;font-size:13px}
+.pv{border:1px solid var(--bd);padding:12px 16px;margin-bottom:12px;border-radius:4px}.pv h3{margin:0 0 8px;font-size:17px;color:var(--blue)}.pv dl{display:grid;grid-template-columns:minmax(120px,220px) 1fr;gap:3px 12px;margin:0}.pv dt{color:#556}.pv dd{margin:0;font-weight:600;word-break:break-word}
+.tl{list-style:none;padding:0}.tl li{padding:8px 0 8px 8px;border-left:4px solid var(--bd)}.tl .done{border-color:#1b7a3a}.tl .cur{border-color:var(--blue);font-weight:700}
+footer{padding:24px 0;font-size:14px;color:#4a5568}
+.sc small{float:right;color:var(--red);font-weight:700}.cap{display:inline-block;font:700 24px monospace;letter-spacing:6px;background:#eef1f6;border:1px solid var(--bd);padding:4px 14px;margin-bottom:6px;text-decoration:line-through wavy #999}
+.bio{background:#eef3ff;border-left:4px solid var(--blue);padding:4px 14px;margin:14px 0}.otp{max-width:220px;font-size:22px;letter-spacing:8px;text-align:center}
+.faq{border:1px solid var(--bd);border-radius:3px;margin:6px 0;padding:8px 12px}.faq summary{font-weight:600;cursor:pointer}h4{margin:10px 0 4px}
+@media print{.topbar,nav,.btn,footer{display:none}}
+.logo-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link:hover {
+    text-decoration: none;
+}
+
+.logo-link .emb {
+    cursor: pointer;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 25px 0 35px;
+    padding: 24px 28px;
+    border: 1px solid #e5e9f2;
+    border-radius: 12px;
+    background: #f5f7fb;
+}
+
+.contact-box h2 {
+    margin: 0 0 6px;
+}
+
+.contact-box p {
+    margin: 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2e7ae6;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.contact-btn:hover {
+    opacity: 0.9;
+}
+
+.contact-details {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e9f2;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contact-grid > div {
+    padding: 18px;
+    border: 1px solid #e5e9f2;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.contact-grid p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+
+    .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,9 @@
+-- Run on an existing nid_prototype database (already included at end of nid_prototype.sql for fresh installs)
+USE nid_prototype;
+ALTER TABLE personal_details ADD first_name VARCHAR(50),ADD middle_name VARCHAR(50),ADD last_name VARCHAR(50),ADD nationality VARCHAR(30),ADD marital_status VARCHAR(20),ADD previous_name VARCHAR(100),ADD father_name VARCHAR(100),ADD mother_name VARCHAR(100),ADD birth_country VARCHAR(40),ADD birth_province VARCHAR(40),ADD birth_district VARCHAR(40),ADD birth_local VARCHAR(80),ADD birth_ward TINYINT,ADD mother_tongue VARCHAR(30);
+ALTER TABLE contact_details ADD alt_mobile VARCHAR(10);
+ALTER TABLE applications ADD prev_applied VARCHAR(3),ADD prev_nid VARCHAR(30),ADD prev_app_no VARCHAR(30);
+CREATE TABLE citizenship_details(id INT AUTO_INCREMENT PRIMARY KEY,user_id INT NOT NULL,cit_no VARCHAR(30),cit_type VARCHAR(30),cit_district VARCHAR(40),cit_office VARCHAR(80),cit_issue_date DATE,cit_issue_bs VARCHAR(12),cit_authority VARCHAR(60),cit_doc_status VARCHAR(30),FOREIGN KEY(user_id) REFERENCES users(id));
+CREATE TABLE addresses(id INT AUTO_INCREMENT PRIMARY KEY,user_id INT NOT NULL,kind ENUM('permanent','current') NOT NULL,province VARCHAR(40),district VARCHAR(40),local_level VARCHAR(80),ward TINYINT,tole VARCHAR(80),house_no VARCHAR(20),street VARCHAR(80),FOREIGN KEY(user_id) REFERENCES users(id));
+CREATE TABLE family_members(id INT AUTO_INCREMENT PRIMARY KEY,user_id INT NOT NULL,relationship VARCHAR(20) NOT NULL,name VARCHAR(100),nepali_name VARCHAR(100),citizenship_number VARCHAR(30),nationality VARCHAR(30),FOREIGN KEY(user_id) REFERENCES users(id));
+CREATE TABLE education_occupation(id INT AUTO_INCREMENT PRIMARY KEY,user_id INT NOT NULL,education VARCHAR(40),employment VARCHAR(30),occupation VARCHAR(80),employer VARCHAR(100),FOREIGN KEY(user_id) REFERENCES users(id));
